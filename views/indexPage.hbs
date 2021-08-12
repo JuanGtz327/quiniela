@@ -1,0 +1,33 @@
+<div class="row">
+	<div class="col-sm-12">
+		<h1>Quiniela Fase Cuartos Liga Mx</h1>
+		<div class="table-responsive">
+			{{#each quinielas}}
+				{{>match quiniela=this}}
+			{{/each}}
+		</div>
+	</div>
+</div>
+<h1>Estado de los partidos</h1>
+<div class="row">
+	{{#each encuentros}}
+	<div class="col-12 col-sm-12 col-md-6">
+		<div class="card mb-3">
+		  <div class="card-header bg-dark text-white">
+		  	<div class="row align-items-center">
+		  		<div class="col-10">
+			  		<h3>{{encuentro}}</h3>	
+			  	</div>
+			  	<div class="col-2 text-end">
+			  		<span class="spinner-grow spinner-grow-sm text-end text-success" role="status" aria-hidden="true"></span>	
+			  	</div>
+			</div>
+		  </div>
+		  <div class="card-body">
+		    <h5 class="card-title">Estado del partido</h5>
+		    <h6> Marcador: 1 - 0</h6>
+		  </div>
+		</div>
+	</div>
+	{{/each}}
+</div>

@@ -1,0 +1,21 @@
+<div class="container">	
+	<div class="row mb-3">
+		<div class="col-md-8">
+			<div class="form-floating">
+	           <input type="text" class="form-control" id="floatingEncuentro" name="enc{{i}}" value="{{enc.encuentro}}">
+	           <label for="floatingEncuentro">Nombre Encuentro</label>
+	        </div>
+		</div>
+		<div class="col-md-4">
+			<div class="form-floating">
+	           <select class="form-select" id="floatingEstado" name="est{{i}}">
+	           	  <option selected value="{{enc.resultado}}">{{enc.resultado}}</option>
+                  <option value="L">Local</option>
+                  <option value="E">Empate</option>
+                  <option value="V">Visitante</option>
+                </select>
+                <label for="floatingEstado">Estado del partido</label>
+	        </div>
+		</div>
+	</div>
+</div>

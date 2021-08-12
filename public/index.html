@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Quiniela App</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/mycss.css">
+</head>
+<body>
+	<!--NAVBAR-->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container-fluid">
+			<a href="/" class="navbar-brand text-white h1">QuiniApp</a>
+		    <div class="d-grid gap-2 d-flex justify-content-md-end">
+			  	<a class="btn btn-info" type="button">Iniciar Sesion</a>
+			  	<a class="btn btn-info" type="button">Resgistrarme</a>
+			</div>
+		</div>
+	</nav>
+	<!--BODY-->
+	<div class="alert alert-warning alert-dismissible fade show" role="alert">
+	  	<strong>Aplicacion en desarrollo</strong> Es posible que se experimenten algunos errores.
+	  	<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+	</div>
+	<div class="container mt-3">
+		<div class="row">
+			<div class="col-sm-12">
+				<h1>Quiniela Fase Cuartos Liga Mx</h1>
+				<div class="table-responsive">
+					<table class="table table-dark table-hover align-center">
+					 	<thead>
+						    <tr>
+						      	<th scope="col">Partido</th>
+						      	<th scope="col" class="text-center">Guero</th>
+						      	<th scope="col" class="text-center">Oswaldo</th>
+						      	<th scope="col" class="text-center">Eric</th>
+						      	<th scope="col" class="text-center">Chucho</th>
+						      	<th scope="col" class="text-center">Nacho</th>
+						      	<th scope="col" class="text-center">Diaz</th>
+						      	<th scope="col" class="text-center">Warriors</th>
+						      	<th scope="col" class="text-center">Ivan</th>
+						    </tr>
+						</thead>
+						<tbody>
+						    <tr>
+						      	<th scope="row">Atlas VS Tigres</th>
+						      	<td class="text-center">V</td>
+						      	<td class="text-center">V</td>
+						      	<td class="text-center">V</td>
+						      	<td class="text-center">V</td>
+						      	<td class="text-center">V</td>
+						      	<td class="text-center">V</td>
+						      	<td class="text-center">L</td>
+						      	<td class="text-center">L</td>
+						    </tr>
+						    <tr>
+						      	<th scope="row">Santos VS Queretaro</th>
+						      	<td class="text-center">V</td>
+						      	<td class="text-center">L</td>
+						      	<td class="text-center">L</td>
+						      	<td class="text-center">L</td>
+						      	<td class="text-center">L</td>
+						      	<td class="text-center">L</td>
+						      	<td class="text-center">L</td>
+						      	<td class="text-center">V</td>
+						    </tr>
+						    <tr>
+						      	<th scope="row">Leon VS Toluca</th>
+						      	<td class="text-center">L</td>
+						      	<td class="text-center">V</td>
+						      	<td class="text-center">V</td>
+						      	<td class="text-center">V</td>
+						      	<td class="text-center">L</td>
+						      	<td class="text-center">L</td>
+						      	<td class="text-center">V</td>
+						      	<td class="text-center">L</td>
+						    </tr>
+						    <tr>
+						      	<th scope="row">Pachuca VS Chivas</th>
+						      	<td class="text-center">L</td>
+						      	<td class="text-center">V</td>
+						      	<td class="text-center">V</td>
+						      	<td class="text-center">L</td>
+						      	<td class="text-center">L</td>
+						      	<td class="text-center">V</td>
+						      	<td class="text-center">V</td>
+						      	<td class="text-center">V</td>
+						    </tr>
+						    <tr>
+						      	<th scope="row">#Goles</th>
+						      	<td class="text-center">19</td>
+						      	<td class="text-center">18</td>
+						      	<td class="text-center">30</td>
+						      	<td class="text-center">12</td>
+						      	<td class="text-center">12</td>
+						      	<td class="text-center">25</td>
+						      	<td class="text-center">16</td>
+						      	<td class="text-center">14</td>
+						    </tr>
+						</tbody>
+						<tfoot>
+							<tr>
+						      	<th scope="row">#Puntos Obtenidos</th>
+						      	<td class="text-center">-</td>
+						      	<td class="text-center">-</td>
+						      	<td class="text-center">-</td>
+						      	<td class="text-center">-</td>
+						      	<td class="text-center">-</td>
+						      	<td class="text-center">-</td>
+						      	<td class="text-center">-</td>
+						      	<td class="text-center">-</td>
+						    </tr>
+						</tfoot>
+					</table>
+				</div>
+			</div>
+		</div>
+		<h1>Estado de los partidos</h1>
+		<div class="row">
+			<div class="col-12 col-sm-12 col-md-6">
+				<div class="card mb-3">
+				  <div class="card-header bg-dark text-white">
+				  	<div class="row align-items-center">
+				  		<div class="col-10">
+					  		<h3>Atlas VS Tigres</h3>	
+					  	</div>
+					  	<div class="col-2 text-end">
+					  		<span class="spinner-grow spinner-grow-sm text-end text-success" role="status" aria-hidden="true"></span>	
+					  	</div>
+					</div>
+				  </div>
+				  <div class="card-body">
+				    <h5 class="card-title">Estado del partido</h5>
+				    <h6> Marcador: 1 - 0</h6>
+				  </div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-12 col-md-6">
+				<div class="card mb-3">
+				  <div class="card-header bg-dark text-white">
+				  	<div class="row align-items-center">
+				  		<div class="col-10">
+					  		<h3>Santos VS Queretaro</h3>
+					  	</div>
+					  	<div class="col-2 text-end">
+					  		<span class="spinner-grow spinner-grow-sm text-end text-success" role="status" aria-hidden="true"></span>	
+					  	</div>
+					</div>
+				  </div>
+				  <div class="card-body">
+				    <h5 class="card-title">Estado del partido</h5>
+				    <h6> Marcador: 2 - 0</h6>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+</body>
+</html>

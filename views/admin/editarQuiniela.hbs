@@ -1,0 +1,44 @@
+<div class="row mt-3">
+	<div class="col-sm-12 col-md-8 mx-auto">
+		<div class="card mb-5">
+			<form action="/admin/editarQuiniela/{{_id}}" method="POST">
+				<div class="text-center bg-dark text-white">
+					<h5 class="display-4 card-title">{{nombre}}</h5>
+					<input type="hidden" name="nombreQuiniela" value="{{nombre}}">
+					<input type="hidden" name="tipoQuiniela" value="{{tipoQuiniela}}">
+				</div>
+				<div class="card-body">
+					{{#if jornadaExist}}
+						{{>encuentroEdit enc=en1 i=1}}
+						{{>encuentroEdit enc=en2 i=2}}
+						{{>encuentroEdit enc=en3 i=3}}
+						{{>encuentroEdit enc=en4 i=4}}
+						{{>encuentroEdit enc=en5 i=5}}
+						{{>encuentroEdit enc=en6 i=6}}
+						{{>encuentroEdit enc=en7 i=7}}
+						{{>encuentroEdit enc=en8 i=8}}
+						{{>encuentroEdit enc=en9 i=9}}
+					{{/if}}
+					{{#if ligcuarExist}}
+						{{>encuentroEdit enc=en1 i=1}}
+						{{>encuentroEdit enc=en2 i=2}}
+						{{>encuentroEdit enc=en3 i=3}}
+						{{>encuentroEdit enc=en4 i=4}}
+					{{/if}}
+					{{#if seminal}}
+						{{>encuentroEdit enc=en1 i=1}}
+						{{>encuentroEdit enc=en2 i=2}}
+					{{/if}}
+				</div>
+				<div class="text-center bg-dark p-3">
+					<div class="d-grid mb-3">
+						<button class="btn btn-primary" type="submit">Actualizar Quiniela</button>
+					</div>
+					<div class="d-grid">
+						<a class="btn btn-danger" href="/admin">Regresar</a>
+					</div>
+		        </div>
+			</form>
+		</div>
+	</div>	
+</div>

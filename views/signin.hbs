@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="col-md-5 mx-auto mt-5">
+    <div class="card">
+      <div class="card-header text-center bg-dark text-white">
+        <h3>Registrarme</h3>
+      </div>
+      <div class="card-body">
+        <form action="/signin" method="POST">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" name="username" value="{{username}}">
+            <label for="floatingInput">Nombre de Usuaio</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="floatingPassword" name="password" value="{{password}}">
+            <label for="floatingPassword">Contraseña</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="floatingConfirmPassword" name="confirm_password" value="{{confirm_password}}">
+            <label for="floatingConfirmPassword">Repetir Contraseña</label>
+          </div>
+          <div class="row g-2 mb-3">
+            <div class="col-md">
+              <div class="form-floating">
+                <input type="number" class="form-control" id="floatingAge" name="age" value="{{age}}">
+                <label for="floatingAge">Edad</label>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="form-floating">
+                <select class="form-select" id="floatingTeam" name="team">
+                  <option selected>Seleccionar</option>
+                  <option value="America">America</option>
+                  <option value="Tigres">Tigres</option>
+                  <option value="Pumas">Pumas</option>
+                </select>
+                <label for="floatingTeam">Equipo Favorito</label>
+              </div>
+            </div>
+          </div>
+          <div class="d-grid">
+            <button class="btn btn-info" type="submit">Registrarme</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

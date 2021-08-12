@@ -1,0 +1,34 @@
+<div class="row mt-3">
+	<div class="col-sm-12 col-md-8 mx-auto">
+		<div class="card mb-5">
+			<form action="/admin/crearQuiniela" method="POST">
+				<div class="text-center bg-dark text-white">
+					<h5 class="display-4 card-title">{{nombreQuiniela}}</h5>
+					<input type="hidden" name="nombreQuiniela" value="{{nombreQuiniela}}">
+					<input type="hidden" name="tipoQuiniela" value="{{tipoQuiniela}}">
+				</div>
+				<div class="card-body">
+					<div class="container">	
+						{{#if jornadaExist}}
+							{{>encuentroJornada}}
+						{{/if}}
+						{{#if ligcuarExist}}
+							{{>encuentroLigcuar}}
+						{{/if}}
+						{{#if seminal}}
+							{{>encuentroSeminal}}
+						{{/if}}
+					</div>
+				</div>
+				<div class="text-center bg-dark p-3">
+					<div class="d-grid mb-3">
+						<button class="btn btn-primary" type="submit">Registrar Quiniela</button>
+					</div>
+					<div class="d-grid">
+						<a class="btn btn-danger" href="/admin">Regresar</a>
+					</div>
+		        </div>
+			</form>
+		</div>
+	</div>	
+</div>

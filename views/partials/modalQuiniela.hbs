@@ -1,0 +1,36 @@
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<form action="/admin/iniciarquiniela" method="POST">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Crear Quiniela</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	       	<div class="card" id="">
+		      <div class="card-body">
+		         <div class="form-floating mb-3">
+		           <input type="text" class="form-control" id="floatingInput" name="nombreQuiniela">
+		           <label for="floatingInput">Nombre Quiniela</label>
+		         </div>
+		         <div class="form-floating">
+		            <select class="form-select" id="floatingQuiniela" name="tipoQuiniela">
+	                  <option value="jornada">Jornada</option>
+	                  <option value="liguilla">Liguilla</option>
+	                  <option value="cuartos">Cuartos</option>
+	                  <option value="semifinal">Semifinal</option>
+	                  <option value="final">Final</option>
+	                </select>
+	                <label for="floatingQuiniela">Tipo de quiniela</label>
+		         </div>
+		      </div>
+		    </div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+	        <button type="submit" class="btn btn-success">Continuar</button>
+	      </div>
+	    </div>
+	  </div>
+	</form>
+</div>

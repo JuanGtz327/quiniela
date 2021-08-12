@@ -1,0 +1,29 @@
+{{this.nombre}}
+
+{{#each quiniela}}
+	<table class="table table-dark table-hover align-center">
+	 	<thead>
+		    <tr>
+		      	<th scope="col" class="text-center">{{nombre}}</th>
+		      	{{#each encuentros}}
+		      		<th scope="col" class="text-center">{{encuentro}}</th>
+		      	{{/each}}
+		    </tr>
+		</thead>
+		<tbody>
+			{{#each usuarios}}
+				<tr>
+					<th scope="col" class="text-center">{{this}}</th>
+				</tr>
+		    {{/each}}
+		</tbody>
+		<tfoot>
+			<tr>
+		      	<th scope="row">#Puntos Obtenidos</th>
+		      	{{#each usuarios}}
+		    		<td class="text-center">-</td>
+		    	{{/each}}
+		    </tr>
+		</tfoot>
+</table>
+{{/each}}
